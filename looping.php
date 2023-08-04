@@ -98,16 +98,13 @@
             ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
         ];
 
-        foreach ($items as $item) {
-            $jajal[] = [
-                "id" => $item[0],
-                "name" => $item[1],
-                "price" => $item[2],
-                "description" => $item[3],
-                "source" => $item[4],
-            ];
+        $skey = array("id", "name", "price", "description", "source");
+        foreach ($items as $items) {
+            print_r(array_combine($skey, $items));
+            echo "<br>";
         }
-        print_r($jajal);
+        
+        
         
         // Output: 
         
